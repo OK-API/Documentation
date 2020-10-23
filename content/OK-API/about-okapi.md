@@ -4,14 +4,14 @@
 - [OK-API Philosophy](#ok-api-philosophy)
 
 ## What is OK-API?
-A long time ago in a galaxy far far away ...
-Or just around the corner on planet earth, some people have been annoyed that they had all this tech and software available, and it still did not do what they wanted and needed. They had servers and workflows to manage.  They got so annoyed by tools packed with advertisement, unwanted data collection and/or overly expensive behemoths of software, that they sometime decided to write their own software. After they had their first drafts programs running in their own environments, they decided to start an organisation to bundle their useful programs, push the development further together, and put it open source so others do not need to go through this as well.  
+A long time ago in a galaxy far far away ...  
+Or just around the corner on planet earth, some people have been annoyed that they had all this tech and software available, and it still did not do what they wanted and needed. They had servers and workflows to manage!  They got so annoyed by tools packed with advertisement, unwanted data collection and/or overly expensive behemoths of software, that they decided to write their own software. After they had their first draft programs running in their own environments, they decided to start an organisation to bundle their useful programs, push the development further together, and put it open source so others do not need to go through this as well.  
 
 ![Fine! We will write our own software! With blackjack and Open Source!](../../images/BenderMeme.jpg)
 
 
 ## What does OK-API mean?
-We realized soon that we had programs with totally different use case domains in our organisation. They were useful and had a purpose, but just in different domains. So our organisations projects somehow looked like the Okapi Animal ... somehow like someone took the legs from a zebra, the body of a horse, the neck of a giraffe, ears from a cow and face from an ant bear, and somehow managed to build a living and beautiful animal out of it.  
+We realized soon that we had programs with totally different use case domains in our organisation. They were useful and had a purpose, but just in different domains. So our organisation's projects somehow looked like the Okapi Animal ... somehow like someone took the legs from a zebra, the body of a horse, the neck of a giraffe, ears from a cow and face from an ant bear, and somehow managed to build a living and beautiful animal out of it.  
 We liked the analogy as our programs on the first glance have nothing to do with each other, but you can combine them to achieve bigger use cases that serve you just right.
 In addition we liked the OK-API abreviation, which looks like "Meh yeah, the API is O.K.", but really means "O.K. - Automated Procedures Initiative", which exactly describes our approach.  
 We are an initative which builds O.K. programs to automate procedures, in order to make our lifes easier.

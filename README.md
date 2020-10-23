@@ -5,11 +5,11 @@ This is the place to contain comprehensive documentation, use cases, FAQs, backg
 
 1. [OK-API About us](./content/OK-API/about-okapi.md)
 2. [OK-API License Considerations](./content/OK-API/license-considerations.md)  
-<br>
+  
 3. [Manage-My-Server](./content/Manage-My-Server/about-manage-my-server.md)
-    3.1 [Project FAQs](./content/Manage-My-Server/FAQs.md)
-    3.2 [Use Cases of this Project](./content/Manage-My-Server/use-cases.md)  
-    3.3 [Script: multi-backup-ctrl](./content/Manage-My-Server/multi-backup-ctrl.md)
-<br>
+   1. [Project FAQs](./content/Manage-My-Server/FAQs.md)
+   2. [Use Cases of this Project](./content/Manage-My-Server/use-cases.md)  
+   3. [Script: multi-backup-ctrl](./content/Manage-My-Server/multi-backup-ctrl.md)
+
 4. [Paperless-Office](./Paperless-Office/about-paperless-office.md) 
 

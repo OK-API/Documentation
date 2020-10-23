@@ -1,0 +1,34 @@
+
+@startuml fourDisk-scenario
+
+node My_Server {
+    database "Disk_A-Primary 3TB" {
+        folder "/home/myUser/" { 
+        [folder1]
+        [folder2]
+        }
+  
+    }
+    database "Disk_B-Primary 2TB" {
+        folder "/home/myUser/myData/" { 
+        [folder3]
+        }
+  
+    }
+    database "Disk_C-Secondary 2TB" {
+        folder "/mnt/backup_C/" {
+            [folder1_backup]
+        }
+    }
+    database "Disk_D-Secondary 4TB" {
+        folder "/mnt/backup_D/" {
+            [folder2_backup]
+            [folder3_backup]
+        }
+    }
+}
+folder1 ..> folder1_backup
+folder2 ..> folder2_backup
+folder3 ..> folder3_backup
+
+@enduml
