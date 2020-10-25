@@ -11,4 +11,3 @@ This is the place to contain comprehensive documentation, use cases, FAQs, backg
    2. [Project FAQs](./content/Manage-My-Server/FAQs.md)
 
 4. [Paperless-Office](./Paperless-Office/about-paperless-office.md) 
-
