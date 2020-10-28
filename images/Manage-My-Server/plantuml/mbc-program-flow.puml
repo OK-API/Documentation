@@ -1,0 +1,64 @@
+@startuml
+
+start
+partition Initialization {
+    :Initialize variables, 
+    logging and settings;
+
+    :Parse script arguments
+    and set flags for execution;
+
+    if (-p getFileContent of input file. Is
+content formatted in pairs per line?) then (yes)
+        else (no - exit 1)
+        stop
+    endif
+}
+
+partition Verification {
+
+    if (checkFileContent of input file. 
+Do the source paths exist? ) then (yes)
+    :read source and target
+    directories to arrays;
+    else (no - exit 1)
+        stop
+    endif
+
+    if (Does the tracking file exist?) then (yes)
+        if(checkTrackingFile. Is the last change timestamp 
+(time of successful execution) of the tracking file 
+smaller than 24 hrs? ) then (yes)
+        else (no - exit 0)
+            stop
+        endif
+    else (no)
+    :Assume first script 
+    execution and continue;
+    endif
+
+}
+
+partition "Sync-Execution startBackup" {
+    repeat :for each entry in sourceDirectoryArray do:;
+    if (-t testflag argument is set?) then (yes)
+        :skip rsync execution and
+        force returncode "out" to 0;
+    else (no)
+        :Execute rsync 
+        sourceDirectory --> targetDirectory;
+    endif
+    if (rsync returncode != 0 ?) then (yes)
+        :log error code and notification; 
+        ->exit2;
+        stop
+    else (no)
+    endif
+repeat while (more entries in sourceDirectoryArray?) is (yes)
+->no;
+}
+:touch trackingFile to 
+update change timestamp;
+->exit 0;
+end
+@enduml
