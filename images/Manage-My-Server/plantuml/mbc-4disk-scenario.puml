@@ -3,7 +3,7 @@
 
 node My_Server {
     database "Disk_A-Primary 3TB" {
-        folder "/home/myUser/" { 
+        folder "/home/myUser/otherData/" { 
         [folder1]
         [folder2]
         }
